@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anton Vasilev Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="Survey-form.css" />
+</head>
+<body>
+  <h1 id="title">Anton Vasilev Survey Form</h1>
+  <p id="description" class="description">Survey form site for my Free Code Camp HTML & CSS certificate.</p>
+  <form id="survey-form">
+    <div class="input name">
+      <label for="name">Name</label>
+      <input name="name" id="name" type="text" placeholder="Input name" required>
+    </div>
+    <div class="input email">
+      <label for="email">Email</label>
+      <input id="email" placeholder="Input email" required type="email">
+    </div>
+    <div class="input age">
+      <label for="age">Age<span> (optional)</span></label>
+      <input id="age" placeholder="Input age" type="number">
+    </div>
+    <div class="input number">
+      <label for="number">Number</label>
+      <input id="number" type="number" min="1" placeholder="Input phone number" max="100">
+    </div>
+    <div class="input dropdown">
+      <label for="dropdown">Which option best describes your current role?</label>
+      <select id="dropdown" required>
+        <option value="">Select your current role</option>
+        <option value="1">Student</option>
+        <option value="2">Full time job</option>
+        <option value="3">Full time learner</option>
+        <option value="4">Prefer not to say</option>
+        <option value="5">Other</option>
+      </select>
+    </div>
+    <div class="input radio">
+      <label for="radio1">How would you rate this site?</label>
+      <ul>
+        <li><input class="radio" type="radio" name="rating" value="1"> "I want my 30 seconds back"</li>
+        <li><input class="radio" type="radio" name="rating" value="2"> "Not great, not terrible"</li>
+        <li><input class="radio" type="radio" name="rating" value="3"> "Some gourmet developing"</li>
+      </ul>
+    </div>
+    <div class="input checkbox">
+      <label for="checkbox">What would you like to see improved?</label>
+      <p>(Check all that apply)</p>
+      <ul><input type="checkbox" value="box 1">I can't seem to find room for improvement</ul>
+      <ul><input type="checkbox" value="box 2">It's already perfect</ul>
+      <ul><input type="checkbox" value="box 3">Make it less awesome</ul>
+      <ul><input type="checkbox" value="box 4">*left with mouth open*</ul>
+      <ul><input type="checkbox" value="box 5">*speechless*</ul>
+      <ul><input type="checkbox" value="box 6">Your CSS is way too good</ul>
+    </div>
+    <div class="input text-area">
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea id="comments">Probably not but if you wish...</textarea>
+    </div>
+    <div class="input submit">
+      <input class="submit" type="submit" id="submit">
+    </div>
+  </form>
+  <footer>
+    <h2>Find me on:</h2>
+    <div class="social-media">
+      <a href="https://www.facebook.com/anton.vasilev.71/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://www.instagram.com/aaa_vasilev/?hl=bg" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.linkedin.com/in/anton-vasilev-112132216/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
+    </div>
+  </footer>
+</body>
+</html>
