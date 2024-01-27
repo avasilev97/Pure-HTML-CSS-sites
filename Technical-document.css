@@ -1,96 +1,96 @@
 :root {
-    --font-family: "Helvetica", sans-serif;
+  --font-family: "Helvetica", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  left: 0;
+  z-index: 100;
+  justify-content: space-around;
+  border: 3px solid gray;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  font-family: var(--font-family);
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  margin-left: 290px;
+  padding: 30px;
+  font-family: var(--font-family);
+}
+
+header {
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+.code {
+  background-color: rgb(238, 237, 237);
+  padding: 20px;
+  margin-left: 20px;
+}
+
+section {
+  margin-left: 20px;
+}
+
+section > header {
+  margin-left: -20px;
+}
+
+nav > header {
+  font-size: 200%;
+  padding: 15px;
+}
+
+.navy {
+  border-top: 1px gray solid;
+  border-bottom: 1px gray solid;
+  padding-left: 0;
+}
+
+.navy > p {
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    width: 250px;
   }
-  
-  body {
-    font-family: var(--font-family);
-  }
-  
   .navbar {
-    position: fixed;
+    position: sticky;
     display: flex;
-    left: 0;
+    top: 0;
+    left: auto;
+    right: auto;
     z-index: 100;
     justify-content: space-around;
     border: 3px solid gray;
     padding: 0;
     top: 0;
     bottom: 0;
-    overflow-y: auto;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: white;
     font-family: var(--font-family);
+    max-height: 200px;
   }
-  
-  #navbar a {
-    text-decoration: none;
-    color: black;
-  }
-  
   main {
-    margin-left: 290px;
-    padding: 30px;
-    font-family: var(--font-family);
-  }
-  
-  header {
-    font-size: 30px;
-    padding-top: 15px;
-  }
-  
-  .code {
-    background-color: rgb(238, 237, 237);
-    padding: 20px;
-    margin-left: 20px;
-  }
-  
-  section {
-    margin-left: 20px;
-  }
-  
-  section > header {
-    margin-left: -20px;
-  }
-  
-  nav > header {
-    font-size: 200%;
+    margin-left: 0;
     padding: 15px;
   }
-  
-  .navy {
-    border-top: 1px gray solid;
-    border-bottom: 1px gray solid;
-    padding-left: 0;
-  }
-  
-  .navy > p {
-    padding-left: 20px;
-    font-size: 18px;
-    font-weight: normal; 
-  }
-  
-  @media (max-width: 768px) {
-    #navbar {
-      width: 250px;
-    }
-    .navbar {
-      position: sticky;
-      display: flex;
-      top: 0;
-      left: auto;
-      right: auto;
-      z-index: 100;
-      justify-content: space-around;
-      border: 3px solid gray;
-      padding: 0;
-      top: 0;
-      bottom: 0;
-      overflow: hidden;
-      overflow-y: scroll;
-      background-color: white;
-      font-family: var(--font-family);
-      max-height: 200px;
-    }
-    main {
-      margin-left: 0;
-      padding: 15px;
-    }
-  }
+}
