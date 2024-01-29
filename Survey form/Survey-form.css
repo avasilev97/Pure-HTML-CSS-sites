@@ -107,8 +107,13 @@ footer {
   font-size: 24px;
 }
 
+
 @media screen and (max-width: 768px) {
   body {
     padding: 10px;
   }
+}
+
+.radio {
+  margin-bottom: 15px;
 }
